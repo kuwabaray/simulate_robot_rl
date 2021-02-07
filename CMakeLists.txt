@@ -10,7 +10,6 @@ project(simulate_robot_rl)
 find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
-  rosbot_description
   laser_filters
   robot_localization
 )
@@ -28,7 +27,7 @@ find_package(Boost REQUIRED COMPONENTS system)
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  CATKIN_DEPENDS rospy std_msgs rosbot_description joint_state_controller laser_filters robot_localization
+  CATKIN_DEPENDS rospy std_msgs joint_state_controller laser_filters robot_localization
 )
 
 ###########
