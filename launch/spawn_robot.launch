@@ -25,5 +25,6 @@
 
  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
    <param name="use_tf_static" value="false"/>
- </node>
+   <param name="publish_frequency" value="10"/> 
+</node>
 </launch>

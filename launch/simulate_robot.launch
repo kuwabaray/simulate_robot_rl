@@ -14,8 +14,8 @@
   
   <include file="$(find simulate_robot_rl)/launch/robot_slam.launch"/>          
   
-  <node pkg="rviz" type="rviz" name="rviz" required="true"
-    args="-d $(find simulate_robot_rl)/config/robot.rviz"/>
+  <!--<node pkg="rviz" type="rviz" name="rviz" required="true"
+    args="-d $(find simulate_robot_rl)/config/robot.rviz"/>-->
 
   <!--Start RL -->
   <include file="$(find simulate_robot_rl)/launch/bringup_rl_worker.launch"/>
